@@ -1,0 +1,11 @@
+ti clean
+ti build -p android
+adb uninstall com.fostwaremedia.example
+adb install /Users/jfoster/Apps/Mobile/titanium/example/build/android/bin/example.apk
+
+
+intent://package=com.fostwaremedia.example;scheme=exampleapp;end;
+
+
+
+ti build -p ios -F iphone --tishadow --retina --devicetypeid com.apple.CoreSimulator.SimDeviceType.iPhone-6 

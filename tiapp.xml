@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app 
+  xmlns:ti="http://ti.appcelerator.org">
+  <property name="acs-api-key-production" type="string">TC0sS8le2CLqZeGhzfH2dvOmyIAZrbgw</property>
+  <property name="acs-api-key-development" type="string">RM3htn1LJRID3EAoS4A6FawzbcZ2WLQj</property>
+  <property name="url" type="string">https://raw.githubusercontent.com/moyses8a/titaniumExample</property>
+  <id>com.moyses8a.example</id>
+  <name>example</name>
+  <version>1.0</version>
+  <publisher>Moises</publisher>
+  <url>https://raw.githubusercontent.com/moyses8a/titaniumExample</url>
+  <description>Example App</description>
+  <copyright>2019 by moyses8a</copyright>
+  <icon>appicon.png</icon>
+  <fullscreen>false</fullscreen>
+  <navbar-hidden>false</navbar-hidden>
+  <analytics>true</analytics>
+  <guid>01398e85-a54a-46d4-9555-be6930dd094e</guid>
+  <property name="ti.ui.defaultunit" type="string">dp</property>
+  <property name="name" type="string">Moises Ochoa</property>
+  <property name="age" type="string">24</property>
+  <ios>
+    <plist>
+      <dict>
+        <key>UISupportedInterfaceOrientations~iphone</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+        </array>
+        <key>UISupportedInterfaceOrientations~ipad</key>
+        <array>
+          <string>UIInterfaceOrientationPortrait</string>
+          <string>UIInterfaceOrientationPortraitUpsideDown</string>
+          <string>UIInterfaceOrientationLandscapeLeft</string>
+          <string>UIInterfaceOrientationLandscapeRight</string>
+        </array>
+        <key>UIRequiresPersistentWiFi</key>
+        <false/>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+        <key>UIStatusBarHidden</key>
+        <false/>
+        <key>UIStatusBarStyle</key>
+        <string>UIStatusBarStyleDefault</string>
+        <key>CFBundleLocalizations</key>
+        <array>
+          <string>en</string>
+          <string>es</string>
+        </array>
+        <key>CFBundleURLTypes</key>
+        <array>
+          <dict>
+            <key>CFBundleURLName</key>
+            <string>exampleapp</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+              <string>exampleapp</string>
+            </array>
+          </dict>
+        </array>
+      </dict>
+    </plist>
+  </ios>
+  <android 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <manifest android:versionCode="1" android:versionName="1.0">
+      <application android:label="Example App" android:theme="@style/Theme.Titanium">
+        <activity android:alwaysRetainTaskState="true" android:label="ExampleApp" android:launchMode="singleTask" android:name=".ExampleActivity" url="App.js">
+          <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+          </intent-filter>
+          <intent-filter>
+            <data android:scheme="exampleapp"/>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+          </intent-filter>
+        </activity>
+      </application>
+    </manifest>
+  </android>
+  <mobileweb>
+    <precache/>
+    <splash>
+      <enabled>true</enabled>
+      <inline-css-images>true</inline-css-images>
+    </splash>
+    <theme>default</theme>
+  </mobileweb>
+  <modules>
+    <module platform="commonjs">ti.cloud</module>
+  </modules>
+  <deployment-targets>
+    <target device="android">true</target>
+    <target device="ipad">true</target>
+    <target device="iphone">true</target>
+    <target device="mobileweb">false</target>
+  </deployment-targets>
+  <sdk-version>8.0.0.GA</sdk-version>
+  <property name="appc-app-id" type="string">5cd479ef1f4e0a4ce4e416a0</property>
+  <property name="acs-authbase-url-development" type="string">https://secure-identity.cloud.appcelerator.com</property>
+  <property name="acs-base-url-development" type="string">https://api.cloud.appcelerator.com</property>
+  <property name="acs-oauth-secret-development" type="string">Gpow77Mp4qzcg1CX4k1zAFSpPDRSrlKw</property>
+  <property name="acs-oauth-key-development" type="string">swW3OtMg0RDVwvEs1HnmCftZLjyo3TKy</property>
+  <property name="acs-username-development" type="string">appc_app_user_dev</property>
+  <property name="acs-password-development" type="string">14yX49kra2qltA1Egx</property>
+  <property name="acs-authbase-url-production" type="string">https://secure-identity.cloud.appcelerator.com</property>
+  <property name="acs-base-url-production" type="string">https://api.cloud.appcelerator.com</property>
+  <property name="acs-oauth-secret-production" type="string">pdrhOuvu190gGbQfZRzaHGKcrh2oDmpC</property>
+  <property name="acs-oauth-key-production" type="string">AyqOcISgL0H2rXOSmqZjzqVv5S4hN6aY</property>
+  <property name="acs-username-production" type="string">appc_app_user</property>
+  <property name="acs-password-production" type="string">TaYw60l8OxIOB53Oyv</property>
+  <property name="appc-org-id" type="string">100033230</property>
+  <property name="appc-creator-user-id" type="string">52573952-46cd-41b4-9cc7-41e34ad1290c</property>
+  <plugins/>
+</ti:app>
